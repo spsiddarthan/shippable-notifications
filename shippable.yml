@@ -38,6 +38,17 @@ integrations:
       on_failure: never
       on_pull_request: never
       on_start: never  
+      
+    - integrationName: hipchat
+      type: hipchat
+      recipients:
+        - "#shiproom"
+      branches:
+        only:
+          - master
+      on_success: always
+      on_start: 
+      on_failure: always  
 #  hub:
 #    - integrationName: "quay-vivex"
 #      type: quay.io
