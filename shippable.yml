@@ -17,9 +17,17 @@ build:
 
 integrations:
    hub:
-    - integrationName: docker
-      type: docker
-      
+    - integrationName: email
+      type: email
+      recipients:
+         - siddarthan@outlook.com
+       branches:
+         only:
+           - master
+       on_success: always
+       on_failure: always
+       on_start: always
+       
    notifications:
     - integrationName: 	slack-int
       type: slack
@@ -47,7 +55,7 @@ integrations:
         only:
           - master
       on_success: always
-      on_start: 
+      on_start: always
       on_failure: always  
 #  hub:
 #    - integrationName: "quay-vivex"
