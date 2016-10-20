@@ -53,5 +53,12 @@ integrations:
       on_success: always
       on_start: always
       on_failure: always  
-
-
+      
+    - integrationName: irc
+      type: irc
+      channels:
+        - "webchat.freenode.net#sidocker-1"
+      on_success: always
+      on_start: always
+      on_failure: always    
+   
