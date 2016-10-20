@@ -19,7 +19,18 @@ integrations:
    hub:
     - integrationName: docker
       type: docker
-  
+      
+   notifications:
+    - integrationName: slack-integration
+      type: slack
+      recipients:
+        - "#slack-notification-ch"
+      branches:
+        only:
+          - master
+      on_success: always
+      on_start: always
+      on_failure: always
 #  hub:
 #    - integrationName: "quay-vivex"
 #      type: quay.io
