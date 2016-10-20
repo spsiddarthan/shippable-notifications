@@ -31,6 +31,13 @@ integrations:
       on_success: always
       on_start: always
       on_failure: always
+      
+    - integrationName: eventTrigger
+      type: webhook
+      on_success: always
+      on_failure: never
+      on_pull_request: never
+      on_start: never  
 #  hub:
 #    - integrationName: "quay-vivex"
 #      type: quay.io
