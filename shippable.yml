@@ -17,17 +17,9 @@ build:
 
 integrations:
    hub:
-    - integrationName: email
-      type: email
-      recipients:
-        - exampleone@org.com
-        - exampletwo@org.com
-      branches:
-        only:
-          - master
-          - dev
-      on_success: always
-      on_failure: always
+    - integrationName: docker
+      type: docker
+  
 #  hub:
 #    - integrationName: "quay-vivex"
 #      type: quay.io
