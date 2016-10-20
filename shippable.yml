@@ -18,7 +18,7 @@ build:
 integrations:
    hub:
     - integrationName: email
-      type: email
+      type: slack
       recipients:
          - siddarthan@outlook.com
       on_success: always
