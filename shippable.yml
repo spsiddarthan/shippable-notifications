@@ -21,7 +21,7 @@ integrations:
       type: docker
       
    notifications:
-    - integrationName: slack-integration
+    - integrationName: 	slack-int
       type: slack
       recipients:
         - "#slack-notification-ch"
