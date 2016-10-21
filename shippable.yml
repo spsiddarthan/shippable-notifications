@@ -16,49 +16,11 @@ build:
 #    - docker pull drydock/u14nod:2016.02
 
 integrations:    
-   notifications:
-    - integrationName: 	slack-int
+   hub:
+    - integrationName: 	email
       type: slack
       recipients:
-        - "#slack-notification-ch"
-      branches:
-        only:
-          - master
+        - "siddarthan@outlook.com"
       on_success: always
       on_start: always
       on_failure: always
-    
-    - integrationName: email
-      type: email
-      recipients:
-         - siddarthan@outlook.com
-      on_success: always
-      on_failure: always
-      on_start: always
-      
-    - integrationName: eventTrigger
-      type: webhook
-      on_success: always
-      on_failure: never
-      on_pull_request: never
-      on_start: never  
-      
-    - integrationName: hipchat
-      type: hipchat
-      recipients:
-        - "#shiproom"
-      branches:
-        only:
-          - master
-      on_success: always
-      on_start: always
-      on_failure: always  
-      
-    - integrationName: irc
-      type: irc
-      channels:
-        - "webchat.freenode.net#sidocker-1"
-      on_success: always
-      on_start: always
-      on_failure: always    
-   
