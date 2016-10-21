@@ -17,10 +17,10 @@ build:
 
 integrations:    
    notifications:
-    - integrationName: 	slack-int
-      type: slack
+    - integrationName: 	email
+      type: email
       recipients:
-        - "#slack-notification-ch"
+        - "siddarthan@outlook.com"
       branches:
         only:
           - master
